@@ -1,0 +1,30 @@
+.btn {
+    background-color: transparent;
+    border: 2px solid #e90101;
+    border-radius: 50px;
+    padding: 10px 45px;
+    cursor: pointer;
+    transition: all 0.3s;
+    color: rgb(255,70,70);
+    font-size: 18px;
+    font-family: "Nunito", Helvetica, sans-serif, Arial;
+}
+
+.btn:hover {
+    background-color: #e90101;
+    color: rgb(238,239,240);
+}
+
+.btn-xs {
+    padding: 7px 25px;
+    font-size: 15px;
+}
+
+.btn-fill {
+    background-color: #e90101;
+    color: rgb(238,239,240);
+}
+
+.btn-fill:hover {
+    background-color: rgb(180,2,3);
+}

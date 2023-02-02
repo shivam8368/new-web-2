@@ -1,0 +1,33 @@
+[data-checkbox] {
+    display: flex;
+    align-items: center;
+    user-select: none;
+}
+
+[data-checkbox] div.checkbox {
+    content: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>');
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width: 16px;
+    height: 16px;
+    border: 1px solid #aaa;
+    background: #FFF;
+    border-radius: 3px;
+    transition: all .275s;
+}
+
+[data-checkbox] div.checkbox:hover {
+    border-color: #4bd396;
+    cursor: pointer;
+}
+
+[data-checkbox] div.checkbox.active {
+    background-color: #4bd396;
+    border-color: #4bd396;
+}
+
+[data-checkbox] label {
+    margin: 0 0 0 6px;
+    font-size: 14px;
+}

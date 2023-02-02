@@ -1,0 +1,94 @@
+.dropdown {
+    position:relative;
+}
+
+[data-dropdown]  {
+    background: #111;
+    transition: all 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    height: auto;
+    border-radius: 6px;
+    user-select: none;
+}
+
+[data-dropdown]:hover {
+    background: rgb(255,0,0,.5);
+    cursor: pointer;
+}
+
+[data-dropdown]:hover > div {
+    color: white;
+}
+
+[data-dropdown] > div {
+    display: flex;
+    align-items: center;
+    padding:9px 12px;
+    color: rgb(200,200,200);
+}
+
+[data-dropdown] svg {
+    width: 20px;
+    height: 20px;
+    margin-right:8px;
+}
+
+[data-dropdown-content] {
+    position: absolute;
+    display: none;
+    top:100%;
+    right:0;
+    min-width: 200px;
+    margin-top:6px;
+    z-index:999;
+}
+
+.dropdown-content-menu-panel {
+    background:#111;
+    padding:0;
+    border-radius: 6px;
+    box-shadow: 0 0 0.5rem rgb(255 255 255 / 2%);
+}
+
+.dropdown-content-menu-panel .item {
+    display:flex;
+    align-items:center;
+    line-height:35px;
+    padding:6px 15px;
+
+}
+
+.dropdown-content-menu-panel .item svg {
+    width: 20px;
+    height: 20px;
+    margin-right:8px;
+    transition: all 0.2s;
+}
+
+.dropdown-content-menu-panel .item .text {
+    border-bottom: 2px solid transparent;
+    border-top: 2px solid transparent;
+    transition: all 0.2s;
+}
+
+.dropdown-content-menu-panel .item:not(.active):hover .text {
+    border-bottom: 2px solid rgba(255,0,0,.6);
+    color: white;
+}
+.dropdown-content-menu-panel .item:not(.active):hover {
+    cursor: pointer;
+}
+
+
+.dropdown-content-menu-panel .item:not(.active):hover svg {
+    color: white;
+}
+
+.dropdown-content-menu-panel .item.active .text {
+    border-bottom: 2px solid rgba(255,0,0,.6);
+    color: white;
+    font-weight: 600;
+}

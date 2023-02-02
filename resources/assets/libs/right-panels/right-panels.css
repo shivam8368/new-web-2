@@ -1,0 +1,110 @@
+.right-panel-wrapper.is-active .panel-overlay {
+    opacity: .8;
+    pointer-events: all
+}
+
+.right-panel-wrapper.is-active .right-panel {
+    -webkit-transform: translateX(0);
+    transform: translateX(0)
+}
+
+.right-panel-wrapper.is-left.is-active .right-panel {
+    -webkit-transform: translateX(0) !important;
+    transform: translateX(0) !important
+}
+
+.right-panel-wrapper.is-left .right-panel {
+    right: unset;
+    left: 0;
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%)
+}
+
+.right-panel-wrapper .panel-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #232326;
+    opacity: 0;
+    pointer-events: none;
+    z-index: 101;
+    -webkit-transition: all .3s;
+    transition: all .3s
+}
+
+.right-panel-wrapper .right-panel {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 480px;
+    height: 100%;
+    background: #232326;
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+    z-index: 102;
+    -webkit-transition: all .3s;
+    transition: all .3s
+}
+
+.right-panel-wrapper .right-panel .right-panel-head {
+    position: relative;
+    height: 60px;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 0 20px
+}
+
+
+.right-panel-wrapper .right-panel .right-panel-head .close-panel {
+    height: 32px;
+    width: 32px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border-radius: 50%;
+    -webkit-transition: all .3s;
+    transition: all .3s
+}
+
+
+.right-panel-wrapper .right-panel .right-panel-head .close-panel svg {
+    stroke: #a2a5b9;
+    height: 22px;
+    width: 22px;
+    -webkit-transition: stroke .3s;
+    transition: stroke .3s
+}
+
+.right-panel-wrapper .right-panel .right-panel-body {
+    position: relative;
+    height: calc(100% - 60px);
+    width: 100%
+}
+
+
+.right-panel-wrapper.is-languages .right-panel-head {
+    padding: 0 30px
+}
+
+@media only screen and (max-width: 767px) {
+    .right-panel-wrapper .right-panel {
+        width:100%;
+        max-width: 100%
+    }
+}

@@ -1,0 +1,10 @@
+.main-panel {
+    background: #181818;
+    padding: 20px;
+    border-radius: 6px;
+    overflow: hidden;
+    -webkit-box-shadow: 0 0 0.5rem rgb(255 255 255 / 2%);
+    box-shadow: 0 0 0.5rem rgb(255 255 255 / 2%);
+    -webkit-transition: all .2s linear 0s;
+    transition: all .2s linear 0s;
+}

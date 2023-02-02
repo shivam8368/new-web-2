@@ -1,0 +1,108 @@
+.orientation-change-box {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    background: #1b1b1b;
+    border:1px solid rgb(34,34,34);
+    border-radius: 8px;
+    padding: 24px 10px 10px;
+    color: #dedede;
+    max-width: 370px;
+    font-size: 16px;
+    line-height: 28px;
+    box-shadow: rgba(27, 27, 27, 0.9) 0px 0px 20px;
+    z-index: 99999;
+}
+
+.orientation-change-box .close-button {
+    position:absolute;
+    width: 18px;
+    height: 18px;
+    top:7px;
+    right:7px;
+    color: rgb(250,120,120);
+    cursor: pointer;
+}
+
+.orientation-change-box .text-section {
+    display:inline-flex;
+    align-items: center;
+    vertical-align: bottom;
+    font-weight:800;
+}
+
+.orientation-change-box .text-section svg {
+    width:21px;
+    height:21px;
+    margin-right:4px
+}
+
+.orientation-change-box .buttons-container {
+    display:flex;
+    align-items: center;
+    margin-top:22px;
+}
+
+.orientation-change-box .buttons-container > div:nth-child(1) {
+    width:50%;
+    padding-right:5px;
+}
+
+.orientation-change-box .buttons-container > div:nth-child(2) {
+    width:50%;
+    padding-left:5px;
+}
+
+.orientation-change-box .button {
+    text-align:center;
+    background-color: rgb(255,70,70);
+    color: white;
+    padding: 3px 0;
+    border-radius: 6px;
+    font-weight: 400;
+    cursor:pointer;
+    font-size: 14px;
+    transition: all 0.25s;
+}
+
+.orientation-change-box .button:hover {
+    cursor: pointer;
+    background-color: rgb(255,40,40);
+}
+
+.orientation-change-box .button span {
+    font-weight: 800;
+}
+
+@media all and (max-width: 400px) {
+    .orientation-change-box {
+        max-width: none;
+        left: 15px;
+        right: 15px;
+        bottom: 10px;
+        font-size: 15px;
+        line-height: 25px;
+        box-shadow: rgb(34, 34, 34) 0px 0px 24px;
+    }
+
+    .orientation-change-box .text-section svg {
+        width:19px;
+        height:19px;
+    }
+
+    .orientation-change-box .buttons-container {
+        display:flex;
+        flex-direction: column;
+    }
+
+    .orientation-change-box .buttons-container > div:nth-child(1) {
+        width:100%;
+        padding-right:0;
+        margin-bottom: 10px;
+    }
+
+    .orientation-change-box .buttons-container > div:nth-child(2) {
+        width:100%;
+        padding-left:0;
+    }
+}

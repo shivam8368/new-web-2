@@ -1,0 +1,29 @@
+[data-radio] {
+    display: flex;
+    align-items: center;
+    user-select: none;
+}
+
+[data-radio] div.radio {
+    flex-shrink: 0;
+    width:20px;
+    height:20px;
+    background: white;
+    border:2px solid white;
+    border-radius: 50%;
+    box-shadow: 0 0 2px 2px rgb(230,230,230);
+    transition: all .275s;
+}
+
+[data-radio] div.radio:hover {
+    cursor: pointer;
+}
+
+[data-radio] div.radio.active {
+    background: #4bd396;
+}
+
+[data-radio] label {
+    margin: 0 0 0 15px;
+    font-size: 16px;
+}
