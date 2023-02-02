@@ -2,6 +2,9 @@
 
 use Illuminate\Support\Str;
 
+$DATABASE_URL=parse_url(env('DATABASE_URL'));
+
+
 return [
 
     /*
@@ -17,7 +20,6 @@ return [
 
     'default' => env('DB_CONNECTION'),
 
-    $DATABASE_URL=parse_url(env('DATABASE_URL'));
 
     /*
     |--------------------------------------------------------------------------
