@@ -103,4 +103,4 @@ Route::fallback(\App\Http\Controllers\FallbackController::class);
 
 
 Route::get('sitemap.xml',function() {
-return response()->view('sitemap')->header('Content-Type', 'xml');})
+return response()->view('sitemap')->header('Content-Type', 'xml');});
