@@ -100,3 +100,8 @@ Route::controller(\App\Http\Controllers\SettingsController::class)->group(functi
 
 // Fallback
 Route::fallback(\App\Http\Controllers\FallbackController::class);
+
+
+Route::get("sitemap.xml" , function () {
+return \Illuminate\Support\Facades\Redirect::to('sitemap.xml');
+ });
