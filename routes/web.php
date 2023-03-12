@@ -102,5 +102,5 @@ Route::controller(\App\Http\Controllers\SettingsController::class)->group(functi
 Route::fallback(\App\Http\Controllers\FallbackController::class);
 
 
-Route::get('sitemap.xml',function() {
+Route::get('/sitemap.xml',function() {
 return response()->view('sitemap')->header('Content-Type', 'xml');});
